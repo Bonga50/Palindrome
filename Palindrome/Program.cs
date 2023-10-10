@@ -13,7 +13,7 @@ namespace Palindrome
             //    Console.WriteLine(checkPalindrome(word[i]));
 
             //}
-            //int nth = 6;
+            //int nth =100;
             //Fibonaci(nth,0,0,1,1);
             List<int> nums = new List<int>() {1,2,3,4,5,6,7,8,9,10 };
             //string test = "ABC";
@@ -23,6 +23,10 @@ namespace Palindrome
 
 
         }
+
+
+
+        
         public static void BinarySearch(int target, List<int> nums, int mid, int start, int end)
         {
             //bool result=false;
@@ -46,14 +50,14 @@ namespace Palindrome
             {
                 end = mid-1;
             }
+
             BinarySearch(target, nums, mid, start, end);
-        
 
         }
         public static void Fibonaci(int Term,int count,int current,int prev,int next) {
 
             
-            if (Term<=0||count>=Term-1)
+            if (Term<=0||count>=Term)
             {
                 Console.WriteLine(current);
                 return;
